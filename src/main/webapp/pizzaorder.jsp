@@ -13,7 +13,7 @@
 <body>
 <div class="container">
     <h1>Create your pizza here!</h1>
-    <form action="pizzaOrderServlet" method="post">
+    <form method="post">
         <div class="form-group">
             <label for="sauce">Sauce</label>
             <select id="sauce" name="sauce">
