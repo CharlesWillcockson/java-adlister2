@@ -12,8 +12,8 @@
 </head>
 <body>
 <h1>Pick a color!</h1>
-<form action="pickColorServlet" method="post">
-    <input type="text" id="bg_color" name="bg_color">
+<form method="post">
+    <input type="text" id="color" name="color">
     <input type="submit">
 </form>
 </body>
