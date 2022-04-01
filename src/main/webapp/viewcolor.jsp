@@ -9,11 +9,10 @@
 <html>
 <head>
     <title>View Color</title>
-    <style>
-        body{background-color: ${newcolor}}
-    </style>
-</head>
-<body>
 
+</head>
+<body style="background-color: ${color}">
+
+<h1>This is the color ${color}</h1>
 </body>
 </html>

@@ -9,7 +9,7 @@ import java.io.IOException;
 public class pizzaOrderServlet extends HttpServlet{
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/pizzaform.jsp").forward(request, response);
+        request.getRequestDispatcher("/pizzaorder.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -23,5 +23,7 @@ public class pizzaOrderServlet extends HttpServlet{
         }
         System.out.println(" ");
         System.out.println(request.getParameter("address"));
+
+        response.sendRedirect("/hello");
     }
 }

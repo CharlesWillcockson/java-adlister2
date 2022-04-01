@@ -5,19 +5,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "pickColorServlet", value = "/pickColorServlet")
+@WebServlet("/pickColor")
 public class pickColorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-
+        request.getRequestDispatcher("/pickcolor.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 
-        String color = request.getParameter("bg_color");
-        request.setAttribute("bg_color", color);
-        request.getRequestDispatcher("changeColorServlet").forward(request, response);
+        String color = request.getParameter("color");
+        request.setAttribute(color, color);
+        response.sendRedirect("/viewColor?color=" + color);
     }
 
 }
