@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Create Ad</title>
+    <title>Create models.Ad</title>
 </head>
 <body>
 <h1>Create A Product</h1>

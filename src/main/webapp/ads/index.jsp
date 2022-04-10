@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>View Ads</title>
+    <title>View dao.Ads</title>
 </head>
 <body>
     <h1>Here are all of the ads: </h1>
